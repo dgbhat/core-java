@@ -1,0 +1,36 @@
+Binary arithmetic operators:
+The Java programming language provides operators to perform arithmetic operations:
+
+addition +
+subtraction -
+multiplication *
+integer division /
+remainder %
+
+
+Unary operators:
+A unary operator takes a single value as the operand.
++5 , -8 etc
+They both have a higher level of precedence than the multiplication and division operators.
+
+
+The precedence order:
+parentheses
+unary plus/minus
+multiplication, division
+addition, subtraction
+--If same priority operator comes then solve it from moving left to right
+
+
+Q:
+The following options are equal to 12:
+25 / 2
+24 / 2
+12 % 13
+
+Q:
+System.out.println(-10 * (3 + 4) / 2)
+-35
+hint: If same priority operator comes then solve it from moving left to right
+
+Q:

@@ -1,9 +1,9 @@
 package basic;
 
+import java.util.Scanner;
+
 public class PlayGround {
     public static void main(String[] args) {
-
-        int a = 100_000;
-        System.out.println(a-40_000);
+        System.out.println(-10 * (3 + 4) / 2);
     }
 }

@@ -1,0 +1,16 @@
+Rules for naming variables
+
+names are case-sensitive;
+a name can include Unicode letters, digits, and two special characters ($, _);
+a name cannot start with a digit;
+a name must not be a keyword (class, static, int are illegal names)
+
+Here are some valid names of variables:
+number, $ident, bigValue, _val, abc, k, var
+
+And here are some invalid ones:
+@ab, 1c, !ab, class
+
+Since Java 9 the single character _ is an invalid name for a variable, but _a and __ (double _ ) are legal names.
+
+Note that to keep backward compatibility the word var can be used as a variable name even after Java 10 was released.

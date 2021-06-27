@@ -1,0 +1,20 @@
+The standard input is a stream of data going into a program. It is supported by the operating system
+
+import java.util.Scanner;
+Scanner scanner = new Scanner(System.in);
+
+There are two ways to read STRINGS with a Scanner class.
+1.
+If your input is an integer number or a single word, you can read the data using next().
+String name = scanner.next();
+But, if the user prints a compound name like "Erich Maria", the program will output only the first word.
+The next() method reads one word only and doesn't include any whitespace. (Trailing space is left out)
+
+2.
+nextLine() method, which reads and outputs the whole line:
+The nextLine() method includes all space characters it encounters.
+
+
+The more correct term to refer to what we’ve called “word” is token: it is a piece of text surrounded by whitespace. We can say now that the next() method finds and returns the next token
+
+nextLine() reads all data till the end of the current line.
