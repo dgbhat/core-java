@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class PlayGround {
     public static void main(String[] args) {
-        System.out.println(-10 * (3 + 4) / 2);
+        long val = 12L;
+        long val2 = 9880014088L;
+        System.out.println(val + val2);
     }
 }
