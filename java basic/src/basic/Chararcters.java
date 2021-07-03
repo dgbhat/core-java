@@ -4,10 +4,6 @@ public class Chararcters {
     /*CHARACTER REPRESENTATION*/
 
 
-    /*
-    UNICODE/UTF16 representation
-    0040 = '@' hex
-    */
     static void Q1() {
         char char2 = '\u0040';
         System.out.println(char2);
@@ -15,10 +11,6 @@ public class Chararcters {
     }
 
 
-    /*
-    ASCII/DECIMAL representation
-    64 = '@' in ASCII
-    */
     static void Q2() {
         char char3 = 64;
         System.out.println(char3);
@@ -35,11 +27,7 @@ public class Chararcters {
         //Mind, doesnt print '@@@';
     }
 
-
-    /*
-    Carraige return character, \r
-    It moves the cursor back to beginning of the line
-    */
+    
     static void Q4() {
         char NL = 10;
         // a new line character
@@ -54,14 +42,8 @@ public class Chararcters {
     }
 
 
-
-
     /****************************/
     /*CHARACTER OPERATIONS*/
-
-    /*
-    Adding (+) and subtracting (-) integer numbers
-    */
     static void Q5() {
         char ch = 'a';
         ch += 1;
@@ -75,10 +57,6 @@ public class Chararcters {
     }
 
 
-    /*
-    Adding and subtracting one characters
-    Use the ASCII values of chars for calculations
-    */
     static void Q6() {
         char cha = 'b';
         // 98
@@ -96,9 +74,7 @@ public class Chararcters {
         // 'a'
     }
 
-    /*
-    prefix and postfix
-    */
+
     static void Q7() {
         char chb = 'A';
         chb += 10;
@@ -111,7 +87,13 @@ public class Chararcters {
 
     public static void main(String[] args) {
 
-        Q1(); Q2(); Q3(); Q4(); Q5(); Q6(); Q7();
+        Q1();
+        Q2();
+        Q3();
+        Q4();
+        Q5();
+        Q6();
+        Q7();
     }
 }
 
@@ -123,6 +105,35 @@ public class Chararcters {
  Range: '\u0000' - '\uffff'.
  Any char variable may be considered as an unsigned integer
  Range: 0 to 65535.
+*/
+
+
+/*
+Q1:
+UNICODE/UTF16 representation
+0040 = '@' hex
+
+Q2:
+ASCII/DECIMAL representation
+64 = '@' in ASCII
+
+Q3:
+char addition
+
+Q4:
+Carraige return character, \r
+It moves the cursor back to beginning of the line
+
+Q5:
+Adding (+) and subtracting (-) integer numbers
+
+Q6:
+Adding and subtracting one characters
+Use the ASCII values of chars for calculations
+
+Q7:
+prefix and postfix
+
 */
 
 
