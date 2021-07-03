@@ -3,20 +3,17 @@ package basic;
 public class Chararcters {
     /*CHARACTER REPRESENTATION*/
 
-
     static void Q1() {
         char char2 = '\u0040';
         System.out.println(char2);
         // '@'
     }
 
-
     static void Q2() {
         char char3 = 64;
         System.out.println(char3);
         // '@'
     }
-
 
     static void Q3() {
         char char1 = '@';
@@ -27,7 +24,6 @@ public class Chararcters {
         //Mind, doesnt print '@@@';
     }
 
-    
     static void Q4() {
         char NL = 10;
         // a new line character
@@ -56,7 +52,6 @@ public class Chararcters {
         // Error
     }
 
-
     static void Q6() {
         char cha = 'b';
         // 98
@@ -73,7 +68,6 @@ public class Chararcters {
         System.out.println(cha);
         // 'a'
     }
-
 
     static void Q7() {
         char chb = 'A';
