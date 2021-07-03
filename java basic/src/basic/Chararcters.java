@@ -128,6 +128,30 @@ Use the ASCII values of chars for calculations
 Q7:
 prefix and postfix
 
+Q8:
+int z = 'z';
+char mystery = z - 10;
+System.out.println(mystery); ?
+
+Q9:
+char ch = 'e';
+ch -= 'a';
+ch++;
+ch += 'b';
+System.out.println(ch); ?
+
+
+
+
+
+
+
+
+
+ANSWERS:
+Q8: Compilation error
+Q9: 'g'
+
 */
 
 
