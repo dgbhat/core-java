@@ -7,6 +7,8 @@ public class Strings {
         Q2();
         Q3();
         Q4();
+        Q5();
+        Q6();
     }
 
     static void Q1() {
@@ -70,15 +72,36 @@ public class Strings {
 
     }
 
+    static void Q5() {
+        String a = "abc";
+        String b = "abc";
+        System.out.println(a == b);  // true
+
+        String c = new String("abc");
+        String d = new String("abc");
+        System.out.println(c == d);  // false
+    }
+
+    static void Q6() {
+        String s1 = "abc";
+        String s2 = "xyz";
+        String s3 = s1 + s2;
+        String s4 = s1.concat(s2);
+        System.out.println(s3.equals(s4)); //true
+        //+ and concat are entirely same
+
+        String shortString = "str";
+        int number = 100;
+        String result1 = shortString + number + 50;
+        //"str10050"
+        String result2 = number + 50 + shortString;
+        //"150str"
+    }
+
 }
 
 
-/*
-Non-primitive type
-String is Immutable. ref Q1
-String Constant Pool, ref below
 
-* */
 
 
 /*
@@ -108,7 +131,6 @@ new String("text");
 //explicitly creates a new and referentially distinct instance of a String object;
 String s = "text";
 //may reuse an instance from the string constant pool if one is available.
-
 String s5; and String s2 = null; are same.
 // s5.length() =NullpointerEx
 String s1 = "";
@@ -121,22 +143,35 @@ Q4:
 indexOf methods
 
 Q5:
+string ==
+Here we are not comparing the strings themselves but their addresses (Mem location of the string obj)
+
+Q6:
+Appendig: + and concat are identical
+Order of operation: from left to right when priority is same (all are + operation)
+
 
 * */
 
 
 
+
 /*
-IMMUTABILITY:
-Almost every method, applied to a String object in order to modify it, creates new String object. So, where do these String objects go? Well, these exist in memory, and one of the key goals of any programming language is to make efficient use of memory.
+Non-primitive type
+String is Immutable. ref Q1
+String Constant Pool, ref below
 
-As applications grow, it's very common for String literals to occupy large area of memory, which can even cause redundancy. So, in order to make Java more efficient, the JVM sets aside a special area of memory called the "String constant pool".
+* */
 
+
+
+
+/*
+String Interning:
 When the compiler sees a String literal, it looks for the String in the pool. If a match is found, the reference to the new literal is directed to the existing String and no new String object is created. The existing String simply has one more reference. Here comes the point of making String objects immutable:
+See https://stackoverflow.com/a/3297877
 
-In the String constant pool, a String object is likely to have one or many references. If several references point to same String without even knowing it, it would be bad if one of the references modified that String value. That's why String objects are immutable.
-
-Well, now you could say, what if someone overrides the functionality of String class? That's the reason that the String class is marked final so that nobody can override the behavior of its methods.
-
+Why Strings are immutable:
 See https://stackoverflow.com/a/17942294
+
 * */
