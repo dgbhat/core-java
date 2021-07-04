@@ -56,6 +56,12 @@ public class IncrementDecrement {
         */
     }
 
+    static void Q5() {
+        int i = 0;
+        i = i++;
+        System.out.println(i);
+    }
+
     public static void main(String[] args) {
         postfix();
         prefix();
@@ -63,6 +69,7 @@ public class IncrementDecrement {
         Q2();
         Q3();
         Q4();
+        Q5();
     }
 }
 
@@ -79,4 +86,17 @@ Q4 = Write a program that reads four numbers and decrements each of them. The pr
 in: 10 11 -2 -3;
 out: 9 10 -3 -4
 
+Q5 = ?
+
+
+
+
+
+
+
+
+
+
+ANS:
+Q5 = 0
 */

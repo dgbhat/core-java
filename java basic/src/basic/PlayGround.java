@@ -1,11 +1,16 @@
 package basic;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class PlayGround {
     public static void main(String[] args) {
-        long val = 12L;
-        long val2 = 9880014088L;
-        System.out.println(val + val2);
+
+        int i = 0;
+        for (int k = 0; k < 100; k++) {
+            i = i++;
+        }
+        System.out.println(i);
+
+
     }
 }
