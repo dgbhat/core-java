@@ -8,11 +8,18 @@ public class Numbers {
     static int intMax2 = Integer.MAX_VALUE;
     static int intMin2 = Integer.MIN_VALUE;
     static long longNum = 1_000_000_000_000L; /* L is mandatory*/
-    float pi = 3.141f; /* similarly, f */
+    float pi = 3.141f;
     /*If f is not specified,
     Err: incompatible types: possible lossy conversion from double to float*/
     double piValue = 3.1415;
+    double pivalue2 = 3.1d;
 
+    static void Q(){
+        /* casting */
+        float f = (float) 20d + 20.02f;
+        long n = 10 + 2L;
+        byte b = (byte) (n + 5);
+    }
 
     public static void main(String[] args) {
         System.out.println(intMax2);
