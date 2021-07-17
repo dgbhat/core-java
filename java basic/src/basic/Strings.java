@@ -150,8 +150,8 @@ Q6:
 Appendig: + and concat are identical
 Order of operation: from left to right when priority is same (all are + operation)
 
-
 * */
+
 
 
 
@@ -162,6 +162,7 @@ String is Immutable. ref Q1
 String Constant Pool, ref below
 
 * */
+
 
 
 

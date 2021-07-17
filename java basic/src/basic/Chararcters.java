@@ -102,6 +102,11 @@ public class Chararcters {
 */
 
 
+
+
+
+
+
 /*
 Q1:
 UNICODE/UTF16 representation
@@ -140,14 +145,6 @@ ch++;
 ch += 'b';
 System.out.println(ch); ?
 
-
-
-
-
-
-
-
-
 ANSWERS:
 Q8: Compilation error
 Q9: 'g'
@@ -155,11 +152,18 @@ Q9: 'g'
 */
 
 
+
+
+
+
+
+
 /*
 ASCII table
+0-9     : 48-57
 A-Z     : 65-90
 a-z     : 97-122
-0-9     : 48-57
 <space> : 32
+@       : 64
 new line: 10
 */
