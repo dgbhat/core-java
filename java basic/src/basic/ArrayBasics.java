@@ -10,7 +10,8 @@ public class ArrayBasics {
 
     static void printingArray() {
         /*
-        simplest way to print array in java */
+        simplest way to print array in java
+        */
 
         /*Simple Array*/
         String[] array = new String[] {"John", "Mary", "Bob"};
