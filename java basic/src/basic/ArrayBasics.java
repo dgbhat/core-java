@@ -35,6 +35,12 @@ public class ArrayBasics {
         /*with values*/
         float[] floatNumbers;
         floatNumbers = new float[] { 1.02f, 0.03f, 4f };
+
+        /*
+        NegativeArraySizeException :
+        int[] arr = new int[-1];
+        However the above code compiles!
+        */
     }
 
     static void sortingArrays() {
