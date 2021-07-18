@@ -7,9 +7,13 @@ public class PlayGround {
 
 
         Scanner sc = new Scanner(System.in);
-        byte b = sc.nextByte();
-        System.out.println(b);
-
+        int[] arr = new int[2];
+        System.out.println(Arrays.toString(arr));
+        for (int a : arr) {
+            System.out.println(a);
+        }
+        int a = 0;
+        System.out.println(a);
 
     }
 }
