@@ -7,7 +7,9 @@ public class PlayGround {
 
 
         Scanner sc = new Scanner(System.in);
-        char[] array = new char[-1];
+        char[] array = new char[1];
         System.out.println(Arrays.toString(array));
+        char ch = 'a';
+        System.out.println(ch += 1);
     }
 }

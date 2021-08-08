@@ -41,15 +41,16 @@ public class Chararcters {
     /****************************/
     /*CHARACTER OPERATIONS*/
     static void Q5() {
-        char ch = 'a';
+        char ch = 'b';
         ch += 1;
         // 'c'
 
         ch -= 2;
         // 'a'
 
-        /** ch = ch -2;*/
-        // Error
+        /** ch = ch + 2;*/
+        // Error: returned type is int
+        int num = ch + 2; //99
     }
 
     static void Q6() {
