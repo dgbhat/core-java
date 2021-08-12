@@ -54,6 +54,6 @@ NOT !
 AND &&
 OR  ||
 XOR ^
-boolean type are often used in op
+boolean type are often used in operands
 
 * */
