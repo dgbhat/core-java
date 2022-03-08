@@ -35,12 +35,8 @@ relational operators have a higher priority than logical operators
 
 
 /*
-Java provides six relational operators to compare numbers:
-
 == (equal to)
 != (not equal to)
 > (greater than)
->= (greater than or equal to)
 < (less than)
-<= (less than or equal to)
 * */

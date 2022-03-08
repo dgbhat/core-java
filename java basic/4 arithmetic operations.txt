@@ -34,3 +34,13 @@ System.out.println(-10 * (3 + 4) / 2)
 hint: If same priority operator comes then solve it from moving left to right
 
 Q:
+a=b+++c;
+=> a = b+c and then b is incremented
+(but incremented value wont be used in this line, post increment)
+token created by lex are a, =, b, ++, +, c
+
+Q
+a=b+++++c;
+Error
+tokens generated are a, =, b, ++, ++, +, c
+which is actually an error as there is no operand after second unary operand

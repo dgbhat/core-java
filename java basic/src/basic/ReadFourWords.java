@@ -17,7 +17,6 @@ public class ReadFourWords {
     }
 
     public static void main(String[] args) {
-        // put your code here
         Scanner sc = new Scanner(System.in);
         getInput(sc);
 
@@ -25,7 +24,17 @@ public class ReadFourWords {
         for(int i=0; i<4; i++){
             System.out.println(wordsAll[i]);
         }
+        sc.close();
     }
+
+/*   Or a simpler way,
+
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < 4; i++) {
+            System.out.println(sc.next());
+        }
+    }*/
 }
 
 /*
