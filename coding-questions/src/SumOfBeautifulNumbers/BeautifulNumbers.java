@@ -1,157 +1,158 @@
-package SumOfBeautifulNumbers;
+import java.io.*;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.util.Arrays;
-import java.util.InputMismatchException;
+import java.util.*;
 
 public class BeautifulNumbers {
-    InputStream is;
-    PrintWriter out;
-    String INPUT = "";
 
-    void solve()
-    {
-        long[] s = new long[1000005];
-        for(int i = 1; i < s.length; i++) {
-            s[i] += s[i-1];
-            s[i] += isBeautiful(i) ? i : 0;
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        PrintWriter wr = new PrintWriter(System.out);
+
+        int T = Integer.parseInt(br.readLine().trim());
+
+        pre();
+
+        for (int t_i = 0; t_i < T; t_i++) {
+
+            String[] str = br.readLine().split(" ");
+
+            int l = Integer.parseInt(str[0]);
+
+            int r = Integer.parseInt(str[1]);
+
+            long out_ = solve(l, r);
+
+// System.out.println(out_);
+
+            wr.write(out_ + "\n");
+
         }
-        StringBuilder sb = new StringBuilder();
-        for(int Q = ni(); Q > 0; Q--) {
-            int l = ni();
-            int r = ni();
-            sb.append(s[r] - s[l-1]);
-            sb.append("\n");
-        }
-        System.out.println(sb.toString());
+
+        wr.close();
+
+        br.close();
+
     }
 
-    public static boolean isBeautiful(int n) {
-        for(int i = 0; i < 10; i++) {
-            int t = n, s = 0;
-            while(t != 0) {
-                int d = t % 10;
-                s += d * d;
-                t /= 10;
+    private static int[] memo = new int[1000001];
+
+    private static long[] sums = new long[1000001];
+
+
+    static void pre() {
+
+        Arrays.fill(memo, -1);
+
+// Arrays.fill(sums, 0);
+
+        memo[0] = 0;
+
+        memo[1] = 1;
+
+        memo[2] = 0;
+
+        memo[4] = 0;
+
+        memo[16] = 0;
+
+        memo[37] = 0;
+
+        memo[58] = 0;
+
+        memo[89] = 0;
+
+        memo[145] = 0;
+
+        memo[42] = 0;
+
+        memo[20] = 0;
+
+
+        sums[0] = 0;
+
+        sums[1] = 1;
+
+        sums[2] = 1;
+
+
+        for (int i = 3; i < 1000001; i++) {
+
+// boolean result = ;
+
+            if (isBeautiful(i)) {
+
+                memo[i] = 1;
+
+                sums[i] = sums[i - 1] + i;
+
+            } else {
+
+                memo[i] = 0;
+
+                sums[i] = sums[i - 1];
+
             }
-            n = s;
-            if(n == 1) return true;
-        }
-        return false;
-    }
 
-    void run() throws Exception
-    {
-        is = INPUT.isEmpty() ? System.in : new ByteArrayInputStream(INPUT.getBytes());
-        out = new PrintWriter(System.out);
-
-        long s = System.currentTimeMillis();
-        solve();
-        out.flush();
-        if(!INPUT.isEmpty())tr(System.currentTimeMillis()-s+"ms");
-    }
-
-    public static void main(String[] args) throws Exception { new BeautifulNumbers().run(); }
-
-    private byte[] inbuf = new byte[1024];
-    public int lenbuf = 0, ptrbuf = 0;
-
-    private int readByte()
-    {
-        if(lenbuf == -1)throw new InputMismatchException();
-        if(ptrbuf >= lenbuf){
-            ptrbuf = 0;
-            try { lenbuf = is.read(inbuf); } catch (IOException e) { throw new InputMismatchException(); }
-            if(lenbuf <= 0)return -1;
-        }
-        return inbuf[ptrbuf++];
-    }
-
-    private boolean isSpaceChar(int c) { return !(c >= 33 && c <= 126); }
-    private int skip() { int b; while((b = readByte()) != -1 && isSpaceChar(b)); return b; }
-
-    private double nd() { return Double.parseDouble(ns()); }
-    private char nc() { return (char)skip(); }
-
-    private String ns()
-    {
-        int b = skip();
-        StringBuilder sb = new StringBuilder();
-        while(!(isSpaceChar(b))){ // when nextLine, (isSpaceChar(b) && b != ' ')
-            sb.appendCodePoint(b);
-            b = readByte();
-        }
-        return sb.toString();
-    }
-
-    private char[] ns(int n)
-    {
-        char[] buf = new char[n];
-        int b = skip(), p = 0;
-        while(p < n && !(isSpaceChar(b))){
-            buf[p++] = (char)b;
-            b = readByte();
-        }
-        return n == p ? buf : Arrays.copyOf(buf, p);
-    }
-
-    private char[][] nm(int n, int m)
-    {
-        char[][] map = new char[n][];
-        for(int i = 0;i < n;i++)map[i] = ns(m);
-        return map;
-    }
-
-    private int[] na(int n)
-    {
-        int[] a = new int[n];
-        for(int i = 0;i < n;i++)a[i] = ni();
-        return a;
-    }
-
-    private int ni()
-    {
-        int num = 0, b;
-        boolean minus = false;
-        while((b = readByte()) != -1 && !((b >= '0' && b <= '9') || b == '-'));
-        if(b == '-'){
-            minus = true;
-            b = readByte();
         }
 
-        while(true){
-            if(b >= '0' && b <= '9'){
-                num = num * 10 + (b - '0');
-            }else{
-                return minus ? -num : num;
-            }
-            b = readByte();
-        }
     }
 
-    private long nl()
-    {
-        long num = 0;
-        int b;
-        boolean minus = false;
-        while((b = readByte()) != -1 && !((b >= '0' && b <= '9') || b == '-'));
-        if(b == '-'){
-            minus = true;
-            b = readByte();
-        }
 
-        while(true){
-            if(b >= '0' && b <= '9'){
-                num = num * 10 + (b - '0');
-            }else{
-                return minus ? -num : num;
-            }
-            b = readByte();
-        }
+    static long solve(int l, int r) {
+
+        return sums[r] - sums[l - 1];
+
     }
 
-    private static void tr(Object... o) { System.out.println(Arrays.deepToString(o)); }
+
+    private static boolean isBeautiful(int i) {
+
+
+        if (memo[i] != -1) {
+
+            return memo[i] == 1;
+
+        }
+
+
+// int n = helper(i);
+
+// System.out.println(" -- " + i + " " + n);
+
+        if (isBeautiful(helper(i)))
+
+            memo[i] = 1;
+
+        else
+
+            memo[i] = 0;
+
+        return memo[i] == 1;
+
+    }
+
+
+    private static int helper(int n) {
+
+        int totalSum = 0;
+
+        while (n > 0) {
+
+            int d = n % 10;
+
+// totalSum += (n % 10) * (n % 10);
+
+            totalSum += d * d;
+
+            n = n / 10;
+
+        }
+
+        return totalSum;
+
+    }
+
+
 }

@@ -44,21 +44,21 @@ public class BeautifulNumbersMyOwn {
         for (int num = l; num <= r; num++) {
             if (isBeautifulNumber(num)) {
                 sumOfBN += num;
-                System.out.println("YES "+ num);
+//                System.out.println("YES "+ num);
             }
             else{
-                System.out.println("NO "+ num);
+//                System.out.println("NO "+ num);
             }
         }
-        System.out.println("SUM "+ sumOfBN);
+//        System.out.println("SUM "+ sumOfBN);
         return sumOfBN;
     }
 
     static boolean isBeautifulNumber(int num) {
-        System.out.println("num "+num);
-        System.out.println(findings);
-        System.out.println(tmpFindings);
-        System.out.println();
+//        System.out.println("num "+num);
+//        System.out.println(findings);
+//        System.out.println(tmpFindings);
+//        System.out.println();
 
         if ((num == 1) || ((findings.get(num) != null) && (findings.get(num) == 1))) {
             tmpFindings.replaceAll((k, v) -> v = 1);

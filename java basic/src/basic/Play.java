@@ -1,11 +1,10 @@
 package basic;
 
-
+import java.util.*;
 import java.io.*;
-import java.util.HashMap;
 
+public class Play {
 
-public class PlayGround {
     public static void main(String[] args) {
     }
 }
