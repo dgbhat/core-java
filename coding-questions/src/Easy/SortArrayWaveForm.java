@@ -1,3 +1,5 @@
+package Easy;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
@@ -59,4 +61,14 @@ public class SortArrayWaveForm {
 * op -> [10, 5, 6, 2, 20, 3, 100, 80]  OR [20, 5, 10, 2, 80, 6, 100, 3] etc
 *
 * Main Idea -> Every EVEN element has to be bigger than its adjecent
+* */
+
+
+/*
+sortWaveForm(arr, n)
+	for i=0; i<n; i+2
+		if i>0 && arr[i] > arr[i-1]
+			swap(arr, i-1, i)
+		if i<n-1 && arr[i] < arr[i+1]
+			swap(arr, i, i+1)
 * */

@@ -5,12 +5,9 @@ import java.util.Comparator;
 
 public class Sort2DArray {
     public static  void Sort2DArrayBasedOnSum (int[][] array){
-        Arrays.sort(array, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] first, int[] second) {
-                if(first[0] + first[1] > second[0]+second[1]) return 1;
-                else return -1;
-            }
+        Arrays.sort(array, (int[] first, int[] second) -> {
+            if(first[0] + first[1] > second[0]+second[1]) return 1;
+            else return -1;
         });
     }
 

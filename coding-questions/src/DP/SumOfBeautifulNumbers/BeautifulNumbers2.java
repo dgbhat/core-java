@@ -1,4 +1,4 @@
-package SumOfBeautifulNumbers;
+package DP.SumOfBeautifulNumbers;
 
 import java.io.*;
 

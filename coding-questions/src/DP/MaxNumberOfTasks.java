@@ -1,4 +1,4 @@
-package MaxNumberOfTasks;//https://leetcode.com/discuss/interview-question/1194238/paypal-max-tasks-that-can-be-completed-in-given-budget
+package DP;//https://leetcode.com/discuss/interview-question/1194238/paypal-max-tasks-that-can-be-completed-in-given-budget
 //https://leetcode.com/discuss/interview-question/1784166/Max-Budget-oror-Task-Completion-oror
 
 /*
