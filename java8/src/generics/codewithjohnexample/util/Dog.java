@@ -8,6 +8,11 @@ public class Dog extends Animal{
     }
 
     @Override
+    public String toString() {
+        return "Dog " + name;
+    }
+
+    @Override
     public void eat() {
         System.out.println(name + " eating");
     }

@@ -9,7 +9,7 @@ public class Cat extends Animal{
 
     @Override
     public String toString() {
-        return name;
+        return "Cat " + name;
     }
 
     @Override
