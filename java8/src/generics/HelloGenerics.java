@@ -1,5 +1,10 @@
 package generics;
 
+import generics.codewithjohnexample.BoundedGenericsExample;
+import generics.codewithjohnexample.GenericMethodExample;
+import generics.codewithjohnexample.GenericWildcardExample;
+import generics.codewithjohnexample.GenericsClassesExample;
+
 /**
  * 1 Generics with Classes
  * 2 Generics with Methods
@@ -7,8 +12,13 @@ package generics;
  * 4 Bounded Generics
  * */
 
-public class HelloGenerics {
+abstract public class HelloGenerics {
     public static void main(String[] args) {
         System.out.println("Hello Generics!!");
+
+        GenericsClassesExample.examples();
+        GenericMethodExample.example();
+        GenericWildcardExample.example();
+        BoundedGenericsExample.example();
     }
 }

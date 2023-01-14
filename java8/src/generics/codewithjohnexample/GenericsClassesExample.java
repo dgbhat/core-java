@@ -1,12 +1,13 @@
 package generics.codewithjohnexample;
 
+import generics.HelloGenerics;
 import generics.codewithjohnexample.util.GenericPrinter;
 import generics.codewithjohnexample.util.Printer;
 
 import java.util.ArrayList;
 
 public class GenericsClassesExample {
-    public static void main(String[] args) {
+    public static void examples() {
         //wo Generics
         Printer printerInteger = new Printer(5);
         printerInteger.print();

@@ -5,7 +5,7 @@ import generics.codewithjohnexample.util.Cat;
 import generics.codewithjohnexample.util.Dog;
 
 public class GenericMethodExample {
-    public static void main(String[] args) {
+    public static void example() {
         //1
         genericMethod(5);
         genericMethod("MadMan");

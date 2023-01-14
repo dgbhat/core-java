@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Kinda generic for a generic!
  */
 public class GenericWildcardExample {
-    public static void main(String[] args) {
+    public static void example() {
         //1
         ArrayList<Integer> arrayList3 = new ArrayList<>();
         arrayList3.add(5);
