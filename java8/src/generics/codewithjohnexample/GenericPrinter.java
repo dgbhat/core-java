@@ -1,13 +1,13 @@
 package generics.codewithjohnexample;
 
 public class GenericPrinter<T> {
-    private T value;
+    private T thing;
 
-    public GenericPrinter(T value) {
-        this.value = value;
+    public GenericPrinter(T thing) {
+        this.thing = thing;
     }
 
     public void print() {
-        System.out.println(value);
+        System.out.println(thing);
     }
 }

@@ -3,16 +3,16 @@ package generics.codewithjohnexample;
 import generics.codewithjohnexample.util.Animal;
 
 public class BoundedGenericPrinter<T extends Animal> {
-    T value;
+    T thing;
 
-    public BoundedGenericPrinter(T value) {
-        this.value = value;
+    public BoundedGenericPrinter(T thing) {
+        this.thing = thing;
     }
 
     public void print() {
-        System.out.println(value);
+        System.out.println(thing);
 
         //We now have access to eat() as the generics extend Animal
-        value.eat();
+        thing.eat();
     }
 }
