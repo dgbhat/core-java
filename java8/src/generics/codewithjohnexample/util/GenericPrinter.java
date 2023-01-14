@@ -1,4 +1,4 @@
-package generics.codewithjohnexample;
+package generics.codewithjohnexample.util;
 
 public class GenericPrinter<T> {
     private T thing;

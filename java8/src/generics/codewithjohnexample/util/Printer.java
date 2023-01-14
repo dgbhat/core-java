@@ -1,4 +1,4 @@
-package generics.codewithjohnexample;
+package generics.codewithjohnexample.util;
 
 public class Printer {
     private Integer value;

@@ -1,5 +1,8 @@
 package generics.codewithjohnexample;
 
+import generics.codewithjohnexample.util.GenericPrinter;
+import generics.codewithjohnexample.util.Printer;
+
 import java.util.ArrayList;
 
 public class GenericsClassesExample {

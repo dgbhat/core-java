@@ -1,5 +1,6 @@
 package generics.codewithjohnexample;
 
+import generics.codewithjohnexample.util.BoundedGenericPrinter;
 import generics.codewithjohnexample.util.Cat;
 
 public class BoundedGenericsExample {

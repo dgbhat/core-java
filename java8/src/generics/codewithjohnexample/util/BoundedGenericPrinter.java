@@ -1,4 +1,4 @@
-package generics.codewithjohnexample;
+package generics.codewithjohnexample.util;
 
 import generics.codewithjohnexample.util.Animal;
 
