@@ -1,6 +1,6 @@
 package lambda.codewithjohnexample;
 
-public class Lambdas {
+public class LambdaExample {
     public static void main(String[] args) {
         //wo lambda
         Cat cat = new Cat();

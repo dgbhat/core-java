@@ -1,6 +1,6 @@
 package lambda;
 
-public class LambdaExample {
+public class HelloLambdas {
     public static void main(String[] args) {
         System.out.println("Hey to the lambda!");
     }
