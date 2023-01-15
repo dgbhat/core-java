@@ -1,8 +1,12 @@
 package lambda;
 
+import lambda.codewithjohnexample.LambdaExample;
+
 public class HelloLambdas {
     public static void main(String[] args) {
         System.out.println("Hey to the lambda!");
+
+        LambdaExample.example();
     }
 }
 

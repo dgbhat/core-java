@@ -1,7 +1,7 @@
 package lambda.codewithjohnexample;
 
 public class LambdaExample {
-    public static void main(String[] args) {
+    public static void example() {
         //wo lambda
         Cat cat = new Cat();
         printThing(cat);
