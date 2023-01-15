@@ -2,14 +2,6 @@ package lambda;
 
 import lambda.codewithjohnexample.LambdaExample;
 
-public class HelloLambdas {
-    public static void main(String[] args) {
-        System.out.println("Hey to the lambda!");
-
-        LambdaExample.example();
-    }
-}
-
 /**
  * @lambda is a short way of creating an object of a FunctionalInterface
  *
@@ -20,3 +12,11 @@ public class HelloLambdas {
  * @lambda returns an object (not a function)
  * @lambda is defined with a single anonymous function with or without return value, the function which provides implementation for the method in the FunctionalInterface
  */
+
+public class HelloLambdas {
+    public static void main(String[] args) {
+        System.out.println("Hey to the lambda!");
+
+        LambdaExample.example();
+    }
+}
