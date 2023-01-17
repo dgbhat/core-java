@@ -7,10 +7,10 @@ import lambda.codewithjohnexample.LambdaExample;
  *
  * @FunctionalInterface lambda can only be used with FunctionalInterface
  * @FunctionalInterface is an interface with one method
- * @FunctionalInterface is not mandatory to annotate, but annotating will enforce restriction to have only one method in the interface
+ * @FunctionalInterface annotation is not mandatory. However, annotation will enforce the interface to contain single method
  *
  * @lambda returns an object (not a function)
- * @lambda is defined with a single anonymous function with or without return value, the function which provides implementation for the method in the FunctionalInterface
+ * @lambda is defined with a single anonymous function with or without return value. This function shall provide the implementation for the method in the FunctionalInterface
  */
 
 public class HelloLambdas {
